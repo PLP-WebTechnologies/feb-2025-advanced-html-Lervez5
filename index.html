@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage with images, lists, tables, and multimedia elements">
+    <title>HTML5 Features Demo</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My HTML5 Features Demo</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List (Roman Numerals)</h2>
+        <ol type="I">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/1561949/pexels-photo-1561949.jpeg" alt="Beautiful landscape" width="500">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Elm Street</td>
+                    <td>555-1234</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak Avenue</td>
+                    <td>555-5678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mark Johnson</td>
+                    <td>789 Pine Lane</td>
+                    <td>555-8765</td>
+                    <td>markj@example.com</td>
+                </tr>
+                <tr>
+                    <td>Linda Lee</td>
+                    <td>101 Maple Road</td>
+                    <td>555-2345</td>
+                    <td>lindalee@example.com</td>
+                </tr>
+                <tr>
+                    <td>James Brown</td>
+                    <td>202 Cedar Drive</td>
+                    <td>555-9876</td>
+                    <td>jamesbrown@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post" novalidate>
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            <br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+            <br><br>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Gender Dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <!-- Subscription Checkboxes -->
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <br><br>
+
+            <!-- Terms and Conditions Radio Buttons -->
+            <label for="terms">Accept Terms and Conditions:</label>
+            <input type="radio" id="termsYes" name="terms" value="yes" required>
+            <label for="termsYes">Yes</label>
+            <input type="radio" id="termsNo" name="terms" value="no">
+            <label for="termsNo">No</label>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Multimedia: Audio and Video Elements -->
+    <section>
+        <h2>Multimedia</h2>
+        
+        <!-- Audio Player -->
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+
+        <!-- Video Player -->
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 weekly assignment. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
